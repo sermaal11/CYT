@@ -6,15 +6,16 @@
 /*   By: smarin-a <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 17:41:21 by smarin-a          #+#    #+#             */
-/*   Updated: 2023/10/22 22:00:32 by smarin-a         ###   ########.fr       */
+/*   Updated: 2023/10/22 22:44:48 by smarin-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-// Una variable  global es una variable a la que podremos accder desde
-// cualquier funcion, a diferencia de una variable local, que solo tiene
-// validez dentro de los corchetes {} en la que la variable este contenido.
+// Una variable estatica global es una variable a la que podremos accder desde
+// cualquier funcion, a diferencia de una variable estatica local, que solo
+// tiene validez dentro de los corchetes {} en la que la variable este
+// contenida.
 
 // Una variable estatica la declaramos en el nivel mas alto, es decir, fuera
 // de una funcion.
