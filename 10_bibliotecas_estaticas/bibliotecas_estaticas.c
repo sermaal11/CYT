@@ -6,7 +6,7 @@
 /*   By: smarin-a <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 18:20:36 by smarin-a          #+#    #+#             */
-/*   Updated: 2023/10/20 18:38:55 by smarin-a         ###   ########.fr       */
+/*   Updated: 2023/10/21 17:47:52 by smarin-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,29 @@
 // Se trata de un archivo empaquetado, como si de un .zip se tratase y dentro
 // de ese archivo va a estar todo el codigo objeto de nuestra biblioteca.
 //
-// MINUTO 3:45 tutorial c - 37 bibliotecas estaticas makigas
+// Como ejemplo, trabajaremos con un archivo .h, que sera nuestra biblioteca
+// en si, la cual contendra 4 funciones, llamadas dividir.c, multiplicar.c,
+// restar.c, sumar.c.
 
+// Este archivo, "bibliotecas_estaticas.c" sera nuestro main en el cual
+// realizaremos nuestras pruebas y comprobaremos que nuestra biblioteca
+// funciona.
 
+// Para ello, debemos incluir todas las bibliotecas que vamos a utilizar. En
+// estre caso, añadiremos ENTRE COMILLAS DOBLES "",la siguiente declaracion.
+
+#include "calculadora.h"
+
+// Una vez incluida la biblioteca, crearemos nuestro main.
+
+int	main(void)
+{
+	int res;
+
+	printf("3 + 2 = %d \n", sumar(3, 2));
+	printf("3 - 2 = %d \n", restar(3, 2));
+	printf("3 * 2 = %d \n", multiplicar(3, 2));
+	dividir(6, 2, &res);
+	printf("3 / 2 = %d \n", res);
+	return (0);
+}
